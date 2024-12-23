@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swetha Portfolio</title>
+    <!-- Tailwind Css CDN Link-->
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+    "
+      rel="stylesheet"
+    />
+    <!-- Link Css -->
+    <link rel="stylesheet" href="./Style.css" />
+    <!-- Font Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav class="container sticky top-0 z-10">
+      <h1 class="m-2 text-xl md:text-2xl"><a href="#">SWETHA.S</a></h1>
+      <svg
+        id="menuicon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-8 w-8 cursor-pointer md:hidden"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+      <ul class="hidden md:flex">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Side Nav -->
+    <nav
+      id="sidenav"
+      class="bg-yellow-200 text-black fixed z-20 top-0 transition-all duration-1000"
+      style="width: 50%; height: 100vh; left: -50%"
+      ;
+    >
+      <div>
+        <p id="close-nav" class="text-right cursor-pointer p-5 md:hidden">X</p>
+      </div>
+      <ul class="flex flex-col gap-10 items-center">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Info -->
+    <section class="textinfo">
+      <h1 class="text-lg md:text-4xl">MERN Stack Web Developer</h1>
+      <h1 class="text-lg mt-3 md:text-3xl font-bold">Hi, I'm Swetha.</h1>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="about_desc">
+        <div class="about_col_1">
+          <h1 class="text-4xl">About Me</h1>
+          <p class="mt-7 leading-snug text-base md:text-lg">
+            Hello! I'm Swetha, a passionate and aspiring MERN Stack web
+            developer with a strong foundation in front-end technologies like
+            HTML, CSS, JavaScript, and React. Currently pursuing my MSc in
+            Computer Science, I continuously enhance my skills by working on
+            exciting projects that bring creative ideas to life. In addition to
+            my web development experience, I completed my role as a web
+            developer at Prodigy Info Tech , where I get to apply my technical
+            knowledge to real-world applications.My ultimate goal is to become a
+            MERN-stack developer and contribute to building meaningful and
+            user-friendly digital solutions.Feel free to browse my portfolio to
+            see my work and get in touch if you'd like to collaborate!
+          </p>
+        </div>
+      </div>
+      <div class="tab-titles text-xl">
+        <p class="tab-links active-link" onClick="opentab('skills')">Skills</p>
+        <p class="tab-links" onClick="opentab('education')">Education</p>
+      </div>
+      <div class="tab-contents active-tab" id="skills">
+        <ul>
+          <li class="mt-5">
+            <span class="text-yellow-100 text-lg">MERN Stack</span
+            ><br />HTML<br><span>CSS</span><br><span>Tailwind CSS</span><br><span>JavaScript</span>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="education">
+        <ul>
+          <li class="mt-5">
+            <span class="text-yellow-100 text-lg">2023</span><br />B.sc.Computer
+            Science<br />Bishop Heber College
+          </li>
+          <li class="mt-5">
+            <span class="text-yellow-100 text-lg">2025</span><br />M.sc.Computer
+            Science<br />Bharathidasan University
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project -->
+    <section class="portfolio" id="portfolio">
+      <div class="project">
+        <h1 class="text-3xl mt-5">My Work</h1>
+      </div>
+      <div class="work-list">
+        <div class="work">
+          <img src="./Images/Work-1.jpg" alt="work-1" />
+          <div class="layer">
+            <h3 class="text-xl font-medium md:mb-5">Greenden</h3>
+            <p>This website is a Greenden clone, built using Tailwind Css.</p>
+            <a
+              href="https://github.com/Swethasangar/greenden__tailwind"
+              target="_blank"
+              ><i class="fa-solid fa-up-right-from-square md:mt-3"></i
+            ></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./Images/Work-2.png" alt="work-2" />
+          <div class="layer">
+            <h3 class="text-xl font-medium md:mb-5">Login-App-In-MERN</h3>
+            <p>
+              This website is developed with the MERN stack to demonstrate my
+              expertise in backend Development.
+            </p>
+            <a
+              href="https://github.com/Swethasangar/User-Login-App-In-MERN"
+              target="_blank"
+              ><i class="fa-solid fa-up-right-from-square md:mt-3"></i
+            ></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./Images/Work-3.jpg" alt="work-3" />
+          <div class="layer">
+            <h3 class="text-xl font-medium md:mb-5">
+              Book-Store E-Commerce Website
+            </h3>
+            <p>
+              This website is developed with the MERN stack to demonstrate my
+              expertise in MERN stack development.
+            </p>
+            <a href="https://github.com/Swethasangar/Book-Store" target="_blank"
+              ><i class="fa-solid fa-up-right-from-square md:mt-3"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="text-3xl mt-5">Contact Me</h1>
+          <p class="mt-4 text-base md:text-xl">
+            <i class="fa-solid fa-paper-plane mr-2 mt-4"></i>
+            <a href="mailto:swethasangar331@gmail.com"
+              >swethasangar331@gmail.com</a
+            >
+          </p>
+
+          <p class="mt-5 cursor-pointer">
+            <i class="fa-solid fa-phone mr-2"></i> +91 6383890583
+          </p>
+          <div class="social-icons">
+            <a href="https://github.com/Swethasangar"
+              ><i class="fa-brands fa-github pr-4 mt-8 fa-2x"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/swethasandres133/"
+              ><i class="fa-brands fa-linkedin fa-2x"></i
+            ></a>
+          </div>
+          <div class="mt-5 md:mt-12">
+            <a href="Images/Resume.pdf" target="_blank" class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+        </div>
+        <div class="contact-right mt-2">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="text" name="Email" placeholder="Your Email" required />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your Message"
+            ></textarea>
+            <button class="btn">Submit</button>
+          </form>
+          <p id="msg" class="text-yellow-500 mt-2"></p>
+        </div>
+      </div>
+    </section>
+    <!-- Script Js -->
+    <script src="index.js"></script>
+  </body>
+</html>
